@@ -1,0 +1,9 @@
+import pickle
+import matplotlib.pyplot as plt
+
+pkl = open('unittest_inputs_outputs.pkl', 'rb')
+im = pickle.load(pkl)
+pkl.close()
+
+#im["inputs"][0] is the image.pkl
+plt.imshow(im["inputs"][0])
